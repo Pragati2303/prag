@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            background-image: linear-gradient(to bottom right,red,rgb(93, 230, 127));
+            background-image: url(https://t4.ftcdn.net/jpg/03/08/40/43/360_F_308404381_LqyMIXDPOR6Ut1TqE2cJRQdxomGsQegc.jpg);
+            width: 100%;
+            min-height: 100vh;
+            padding-left: 8%;
+            padding-right: 8%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .logo {
+            width: 80px;
+            cursor: pointer;
+            margin: 30px 0px;
+
+        }
+
+
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 30px;
+            
+
+        }
+        nav ul li a {
+            color: rgb(243, 243, 106);
+            
+        }
+
+        nav ul li a:hover {
+            color: wheat;
+        }
+
+        .row {
+
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+
+        }
+
+        .col1 {
+            flex-basis: 40%;
+            position: relative;
+            margin-left: 200px;
+            margin-top: 60px;
+
+        }
+
+        .col1 h2 {
+            font-size: 60px;
+            color: rgb(236, 236, 144);
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .col1 h4 {
+            font-size: 45px;
+            margin-left: 245px;
+            color: rgb(236, 236, 144);
+            font-family: 'Dancing Script', cursive;
+            ;
+        }
+
+        .col1 h1 {
+            font-size: 60px;
+            color: rgb(236, 236, 144);
+            font-family: 'Dancing Script', cursive;
+            margin-left: 260px;
+        }
+
+        .col1 p {
+
+            font-family: 'Dancing Script', cursive;
+            ;
+            color: #fffff0;
+            font-size: 6vh;
+            top: 290px;
+            -webkit-animation: colorchange 20s infinite alternate;
+
+        }
+
+        @-webkit-keyframes colorchange {
+            0% {
+                color: blue;
+            }
+
+            10% {
+                color: yellow;
+            }
+
+            20% {
+                color: violet;
+            }
+
+            30% {
+                color: turquoise;
+            }
+
+            40% {
+                color: tomato;
+            }
+
+            50% {
+                color: teal;
+            }
+
+            60% {
+                color: rgb(54, 211, 132);
+            }
+
+            70% {
+                color: rgb(128, 0, 53);
+            }
+
+            80% {
+                color: rgb(221, 21, 14);
+            }
+
+
+        }
+
+
+
+        #signin {
+            background-size: auto;
+            position: absolute;
+            font-size: 3vh;
+            border: ridge;
+            background: transparent;
+            color: rgb(236, 236, 144);
+            border-radius: 3vh;
+            top: 380px;
+            left: 390px;
+
+
+        }
+
+        #n1 {
+            font-size: 3vh;
+            margin: 1vh;
+        }
+
+        .sociallinks img {
+            height: 15px;
+            margin: 20px;
+            margin-top: 25vh;
+            cursor: pointer;
+
+
+        }
+        .active{
+            color: whitesmoke;
+        }
+
+        .menubtn{
+            color:#fff;
+            font-size: 20px;
+            display: none;
+        }
+        #click{
+            display: none;
+        }
+        #signin:hover{
+                color: whitesmoke;
+            }
+
+        
+        @media only screen and (max-width:700px) {
+            nav ul {
+               
+             
+              position: fixed;
+              display: flex;
+              right: -900px;
+              z-index: 2;
+              flex: 2;
+
+
+                
+            }
+
+            nav ul li {
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                
+               
+            }
+
+            nav ul li a {
+                color: #fff;
+                display: inline-block;
+                width: max-content;
+                background-color:transparent;
+                
+            }
+            nav ul li a:hover {
+            color: rgb(196, 136, 25);
+        }
+
+            .row {
+                flex-direction: column-reverse;
+
+
+            }
+
+            .col1 {
+                flex-basis: 40%;
+                position: relative;
+                margin-left: 45px;
+                margin-top: 35px;
+
+            }
+
+            .col1 h2 {
+                font-size: 40px;
+                font-family: 'Dancing Script', cursive;
+
+            }
+
+            .col1 h4 {
+                font-size: 20px;
+                font-family: 'Dancing Script', cursive;
+                margin-left: 30px;
+            }
+
+            .col1 h1 {
+                font-size: 60px;
+                font-family: 'Dancing Script', cursive;
+                margin-left: 0px;
+            }
+
+            .col1 p {
+
+                font-family: 'Dancing Script', cursive;
+                color: #fffff0;
+                font-size: 40px;
+
+
+            }
+
+            #signin {
+                background-size: auto;
+                position: absolute;
+                font-size: 3vh;
+                border: ridge;
+                background: transparent;
+                color: rgb(236, 236, 144);
+                border-radius: 3vh;
+                top: 530px;
+                left: 390px;
+                margin-left: -390px;
+
+
+            }
+            #signin:hover{
+                color: whitesmoke;
+            }
+
+            #n1 {
+                font-size: 3vh;
+                margin: 1vh;
+            }
+
+
+
+
+
+            .sociallinks img {
+                height: 20px;
+                margin-top: 120px;
+                cursor: pointer;
+            }
+           
+           nav .menubtn{
+            color:#fff;
+            display: block;
+            margin-top: 2vh;
+            
+        }
+        #click:checked ~ ul{
+            right: 0;
+        
+        }
+        #click{
+            display: none;
+        }    
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="plogo.png" class="logo">
+            <nav>
+                <input type="checkbox" name="" id="click">
+                <label for="click" class="menubtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul id="menulist">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="https://www.fnp.com/cakes">Categories</a></li>
+                    <li><a href="contact.html"> Contact Us</a></li>
+                    <li><a href="https://www.fnp.com/info/help-center?promo=help_hmenu&cid=india">Help</a></li>
+
+
+                </ul>
+            </nav>
+    
+        </div>
+        <div class="row">
+            <div class="col1">
+                <h2>WELCOME</h2><br>
+                <h4>TO</h4><br>
+                <h1>PUNE BAKERS</h1>
+                <p> <span>Unique</span>
+                    <span>creation </span>
+                    <span>for</span>
+                    <span>unique</span>
+                    <span>occation</span>
+
+                </p>
+                <a id="signin" href="form.html">
+                    <h6 id="n1">Click Here TO Sign-In</h6>
+                </a>
+
+            </div>
+            <div class="sociallinks">
+                <img src="facebook.png" alt="">
+                <img src="insta.png" alt="">
+                <img src="tweet.png" alt="">
+
+            </div>
+
+        </div>
+    </div>
+   
+</body>
+
+</html>
